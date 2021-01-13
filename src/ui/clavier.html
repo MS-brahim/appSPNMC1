@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Phone</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- font-awsome  -->
+    <!-- <script src="https://kit.fontawesome.com/8f45faa16b.js" crossorigin="anonymous"></script> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between mb-1">
+            <small>
+                <i class="fa fa-signal"> HIM &nbsp; <i class="fa fa-wifi" aria-hidden="true"></i></i>  
+            </small>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+        </div>
+        <small class="row m-1 text-center">
+            <a class="col-4 nav-link border bg-secondary text-white" href="clavier.html"><i class="fa fa-phone "></i> CLAVIER</a>
+            <a class="col-4 nav-link text-secondary border" href="contact.html"><i class="fa fa-users"></i> CONTACT</a>
+            <a class="col-4 nav-link text-secondary border"  href="recent.html"><i class="fa fa-history"></i> RECENT</a>
+        </small>
+        <h2 id="outputNum" style="max-width: 370px; display:block; min-height: 100px;">
+        </h2>
+        <div>
+            <div class="row text-center mt-5">
+                <div class="col-4">
+                    <button onclick="btn(1)" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        1 <br>
+                        <small>...</small>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button onclick="btn(2)" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        2 <br>
+                        <small>ABC</small>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button onclick="btn(3)" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        3 <br>
+                        <small>DEF</small>
+                    </button>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-4">
+                    <button onclick="btn(4)" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        4 <br>
+                        <small>GHI</small>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button onclick="btn(5)" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        5 <br>
+                        <small>JKL</small>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button onclick="btn(6)" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        6 <br>
+                        <small>MNO</small>
+                    </button>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-4">
+                    <button onclick="btn(7)" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        7 <br>
+                        <small>PQRS</small>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button onclick="btn(8)" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        8 <br>
+                        <small>TUV</small>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button onclick="btn(9)" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        9 <br>
+                        <small>WXYZ</small>
+                    </button>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-4">
+                    <button onclick="btn('*')" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        * <br>
+                        <small>_</small>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button onclick="btn(0)" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        0 <br>
+                        <small>+</small>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button onclick="btn('#')" class="btn btn-light btn-outline-secondary border rounded-circle m-auto w-75">
+                        # <br>
+                        <small>/</small>
+                    </button>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button onclick="call()" id="calling" class="btn btn-success rounded-circle m-auto w-75">
+                        c <br>
+                        <small>/</small>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button onclick="clean()" class="btn btn-light rounded-circle m-auto w-75">
+                        <small>remove</small>
+                    </button>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="../js/btn.js"></script>
+    <script src="../js/back/clavier.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
