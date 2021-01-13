@@ -1,0 +1,33 @@
+{
+  "name": "codesource",
+  "version": "1.0.0",
+  "description": "Desktop application that allows you to save phone numbers and make calls in JavaScript(node JS, Electron JS).",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MS-brahim/appSPNMC.git"
+  },
+  "keywords": [
+    "node js",
+    "electron js"
+  ],
+  "author": "MS-Brahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MS-brahim/appSPNMC/issues"
+  },
+  "homepage": "https://github.com/MS-brahim/appSPNMC#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dateformat": "^4.4.1",
+    "electron": "^11.1.1",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "line-reader": "^0.4.0",
+    "nodemon": "^2.0.7"
+  }
+}
