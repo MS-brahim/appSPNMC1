@@ -1,10 +1,11 @@
 const fs = require('fs');
-var dateFormat = window.require("dateformat");
+let dateFormat = window.require("dateformat");
+const swal = require('sweetalert2');
 
 function call(){
 
     let outputNum = document.getElementById("outputNum").innerHTML ;
-    let dataArray = [outputNum.trim() +", "+ dateFormat("d-mm-yyyy")+";"+""+"\n"];
+    let dataArray = [outputNum.trim() +" <br><small>"+ dateFormat("d-mm-yyyy HH:mm:ss")+"</small>;"+""+"\n"];
  
     fs.appendFileSync('data/recent.txt', dataArray  , (err) => {
         if (err) throw err;
@@ -14,5 +15,10 @@ function call(){
 
 calling.addEventListener('click',function()  {
     var outputNum = document.getElementById("outputNum").innerHTML;
-    alert("Calling..."+" "+outputNum.trim());
+    //swal("Calling..."+" "+outputNum.trim());
+    swal.fire(
+        "Calling...",
+        outputNum.trim(),
+        'phone'
+      )
 });
