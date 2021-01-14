@@ -29,6 +29,6 @@ fs.readFile('data/contact.txt','utf-8',(err,data)=>{
 })
 
 function call() {
-   //location.replace("clavier.html");
-    swal("deded")
+    location.replace("clavier.html");
+    
 }

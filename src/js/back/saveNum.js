@@ -4,7 +4,7 @@ const swal = require('sweetalert2');
 function save(){
     let numberPhone = document.getElementById("numberPhone").value;
     let userName = document.getElementById("userName").value;
-    let dataArray = [userName+" <br><small> "+numberPhone+"</small>;"+""+"\n"];
+    let dataArray = [userName+" <br><small> "+numberPhone+"</small>;"+"\n"];
  
     if (numberPhone =="") {
         swal.fire('error');
@@ -14,7 +14,8 @@ function save(){
             if (err) throw err;
             console.log("Success save !!");
             swal.fire('success');
-            location.replace("contact.html");
+            
         });
+        location.reload("contact.html");
     }
 };
