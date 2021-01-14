@@ -8,5 +8,6 @@ Desktop application that allows you to save phone numbers and make calls in Java
 ```
 
 ```bash
-- enter appSPNMC1/src/ npm i
+- cd /src/
+- /src/ npm i
 ```
