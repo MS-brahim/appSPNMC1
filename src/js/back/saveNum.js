@@ -7,15 +7,15 @@ function save(){
     let dataArray = [userName+" <br><small> "+numberPhone+"</small>;"+"\n"];
  
     if (numberPhone =="") {
-        swal.fire('error');
+        return;
     } else {
 
         fs.appendFileSync('data/contact.txt', dataArray  , (err) => {
             if (err) throw err;
             console.log("Success save !!");
-            swal.fire('success');
-            
+            swal.fire('success');            
         });
-        location.reload("contact.html");
+        // location.reload("contact.html");
+        document.getElementById("formSave").action = "contact.html"
     }
 };

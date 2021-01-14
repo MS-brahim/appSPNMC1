@@ -8,8 +8,8 @@ fs.readFile('data/contact.txt','utf-8',(err,data)=>{
 
         contact.push(data);
 
-        console.log(data);
-        console.log(contact)
+        // console.log(data);
+        // console.log(contact)
 
         let ul = document.getElementById("conatctList")
 
@@ -29,6 +29,6 @@ fs.readFile('data/contact.txt','utf-8',(err,data)=>{
 })
 
 function call() {
-    location.replace("clavier.html");
+    location.href="clavier.html"
     
 }
