@@ -1,5 +1,5 @@
 # appSPNMC1
-Desktop application that allows you to save phone numbers and make calls in JavaScript([nodeJS](https://nodejs.org/)And[ElectronJS](https://www.electronjs.org/)).
+Desktop application that allows you to save phone numbers and make calls in JavaScript([nodeJS](https://nodejs.org/) And [ElectronJS](https://www.electronjs.org/)).
 
 ## Run projet
 
